@@ -3,7 +3,7 @@
 import 'react';
 
 const CarouselAds = () => {
-  const ads = Array(6).fill("/assets/images/logoTFS.webp"); // Para múltiples imágenes
+  const ads = Array(6).fill("assets/images/logoTFS.webp"); // Para múltiples imágenes
 
   return (
     <div className=".carousel-image-full-height mt-1">
