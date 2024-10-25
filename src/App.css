@@ -272,14 +272,6 @@ textarea {
   .loader:after {
     font-size: 18px;
   }
-
-  .carousel-item {
-    height: 75vh; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
-  }
-
-  .carousel-image-full-height {
-    height: 100%; /* La imagen ocupa todo el alto del contenedor */
-  }
 }
 
 @media (max-width: 576px) {
@@ -320,12 +312,5 @@ textarea {
 
   .carousel-item img {
     height: 100% !important;
-  }
-
-  #pestaña {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
