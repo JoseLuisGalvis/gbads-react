@@ -6,7 +6,7 @@ const CarouselAds = () => {
   const ads = Array(6).fill("assets/images/logoTFS.webp"); // Para múltiples imágenes
 
   return (
-    <div className=".carousel-image-full-height mt-1">
+    <div className="carousel-image-full-height mt-1">
       {/* Carrusel de Anuncios Publicitarios */}
       <div id="carouselAds" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
