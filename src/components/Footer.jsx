@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer_logo mt-2">
               <a href="#" className="d-flex align-items-center">
                 <img
-                  src="assets/images/logoService.png"
+                  src="../images/logoService.png"
                   alt="logo"
                   className="me-2 mb-3"
                   style={{ width: '150px', height: '110px' }}
