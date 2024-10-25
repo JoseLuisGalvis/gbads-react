@@ -1,5 +1,5 @@
 import 'react';
-// Asegúrate de incluir estilos personalizados si es necesario
+import logo from '/assets/images/logoService.png';
 
 const Footer = () => {
   return (
@@ -9,12 +9,8 @@ const Footer = () => {
           <div className="col-md-4 mb-3 mb-md-0">
             <div className="footer_logo mt-2">
               <a href="#" className="d-flex align-items-center">
-                <img
-                  src="../images/logoService.png"
-                  alt="logo"
-                  className="me-2 mb-3"
-                  style={{ width: '150px', height: '110px' }}
-                />
+              <img src={logo} alt="Logo" className="me-2 mb-3"
+                  style={{ width: '150px', height: '110px' }}/>
               </a>
               <p className="text-white">Maximiza el Contacto con tus Clientes.</p>
             </div>
