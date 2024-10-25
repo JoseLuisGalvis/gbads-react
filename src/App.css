@@ -193,7 +193,6 @@ button:focus {
 
 .carousel-image-full-height {
   object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-  height: 700px; /* Ajusta la altura de la imagen según tus necesidades */
 }
 
 #pestaña {
