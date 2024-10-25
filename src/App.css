@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffff;
+}
+
+/**/
+/* Estilos para el modo oscuro */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos específicos para los iconos de Font Awesome */
+.fas {
+  font-size: 1.25rem; /* Ajusta el tamaño de los iconos */
+}
+
+/* Asegúrate de que los elementos del navbar tengan transición suave */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Estilo opcional para el botón de tema */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(232, 148, 3, 0.8);
+}
+
+/* Estilos para el botón de cambio de tema */
+/* Estilos para el botón de cambio de tema */
+.theme-toggle-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-toggle-button i {
+  font-size: 1.5rem;
+}
+
+/* Estilos adicionales para el tema oscuro */
+.dark .theme-toggle-button {
+  background-color: white;
+  color: gray;
+}
+
+.dark .theme-toggle-button:hover {
+  background-color: #e5e7eb; /* Color gris claro para el hover en el tema oscuro */
+}
+
+/* Asegurarse de que el icono de la luna sea visible en el modo light */
+.theme-toggle-button .fas.fa-moon {
+  color: white;
+}
+
+.dark .theme-toggle-button .fas.fa-moon {
+  color: gray;
+}
+
+.theme-toggle-button .fas.fa-sun {
+  color: gray;
+}
+
+.dark .theme-toggle-button .fas.fa-sun {
+  color: white;
+}
+
+/* Estilos para el box-shadow en modo oscuro */
+.dark #pestaña {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Asegúrate de que la transición sea suave */
+#pestaña {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Modo oscuro */
+.dark #contactForm {
+  color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark label,
+.dark h2,
+.dark h4 {
+  color: white !important;
+}
+
+/* Si los estilos anteriores no funcionan, prueba con esto */
+:root[class~="dark"] label,
+:root[class~="dark"] h2,
+:root[class~="dark"] h4 {
+  color: white !important;
+}
+
+/* Para los inputs en modo oscuro */
+.dark .form-control {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: white !important;
+}
+
+/* Para el placeholder en modo oscuro */
+.dark .form-control::placeholder {
+  color: #9ca3af !important;
+}
+
+/***/
+
+.navbar img {
+  width: 4em;
+  height: 3em;
+}
+
+.navbar-toggler {
+  border-color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.loader {
+  width: 40% !important;
+}
+
+.loader:after {
+  content: "";
+  font-weight: 600;
+  font-size: 30px;
+  color: #f58a07;
+  animation-name: animatingtext;
+  animation-duration: 1800ms;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0 5px rgba(243, 138, 57, 0.8), 0 0 10px rgba(243, 138, 57, 0.6),
+    0 0 15px rgba(243, 138, 57, 0.4), 0 0 20px rgba(243, 138, 57, 0.2);
+}
+
+@keyframes animatingtext {
+  0% {
+    content: " C  ";
+    text-shadow: 0 0 5px rgba(243, 138, 57, 0.8),
+      0 0 10px rgba(243, 138, 57, 0.6), 0 0 15px rgba(243, 138, 57, 0.4),
+      0 0 20px rgba(243, 138, 57, 0.2);
+  }
+  14% {
+    content: " CA  ";
+  }
+  28% {
+    content: " CAB  ";
+  }
+  42% {
+    content: " CABA  ";
+  }
+  56% {
+    content: " CABA y   ";
+  }
+  70% {
+    content: " CABA y P   ";
+  }
+  84% {
+    content: " CABA y PB   ";
+  }
+  100% {
+    content: " CABA y PBA   ";
+  }
+}
+
+.carousel-image-full-height {
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  height: 700px; /* Ajusta la altura de la imagen según tus necesidades */
+}
+
+#pestaña {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 10px 5px 10px rgba(2, 40, 79, 0.4);
+}
+
+#pestaña img {
+  width: 320px;
+  height: 180px;
+  object-fit: contain;
+}
+
+#aside-ad {
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+textarea {
+  box-shadow: inset 6px 4px 8px rgba(2, 40, 79, 0.4),
+    6px 4px 8px rgba(2, 40, 79, 0.4);
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp-btn {
+  z-index: 2;
+}
+
+.whatsapp-btn img {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.1);
+}
+
+/* *** *** Responsive *** *** */
+@media (max-width: 768px) {
+  /* Estilos para tabletas y móviles */
+  .navbar img {
+    width: 3em;
+    height: 2em;
+  }
+
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+
+  .navbar-toggler {
+    padding: 0.25em;
+  }
+
+  .loader:after {
+    font-size: 30px;
+  }
+
+  .loader h2 {
+    font-size: 0.9em;
+    margin-top: 0.5em !important;
+  }
+
+  .loader {
+    width: 100% !important;
+  }
+
+  .loader:after {
+    font-size: 18px;
+  }
+
+  .carousel-item {
+    height: 75vh; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
+  }
+
+  .carousel-image-full-height {
+    height: 100%; /* La imagen ocupa todo el alto del contenedor */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Estilos para dispositivos móviles */
+  .navbar img {
+    width: 3em;
+    height: 2em;
+  }
+
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+
+  .navbar-toggler {
+    padding: 0.25em;
+  }
+
+  .loader:after {
+    font-size: 30px;
+  }
+
+  .loader h2 {
+    font-size: 0.9em;
+    margin-top: 0.5em !important;
+  }
+
+  .loader {
+    width: 100% !important;
+  }
+
+  .loader:after {
+    font-size: 18px;
+  }
+
+  .carousel-item {
+    height: 100vh !important; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
+  }
+
+  .carousel-item img {
+    height: 100% !important;
+  }
+
+  #pestaña {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
