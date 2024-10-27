@@ -174,7 +174,7 @@ button:focus {
 }
 
 .loader {
-  width: 40% !important;
+  width: 50% !important;
 }
 
 .loader:after {
@@ -232,6 +232,10 @@ button:focus {
   height: 86vh !important;
 }
 
+.row > * {
+  padding: 0 !important;
+}
+
 #pestaña {
   width: 320px;
   display: flex;
@@ -248,12 +252,36 @@ button:focus {
   object-fit: contain;
 }
 
+.card-body {
+  font-size: 16px; /* Ajusta el tamaño de la fuente aquí */
+  line-height: 1.5; /* Ajusta la separación entre líneas aquí */
+}
+
+.card-title {
+  font-size: 18px; /* Ajusta el tamaño de la fuente del título si es necesario */
+  margin-bottom: 10px; /* Espacio adicional entre el título y el texto */
+}
+
+.card-text {
+  font-size: 16px; /* Ajusta el tamaño de la fuente del título si es necesario */
+  margin-bottom: 10px; /* Espacio adicional entre el título y el texto */
+}
+
+.card-text-address {
+  display: -webkit-box; /* Necesario para aplicar -webkit-line-clamp */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Número de líneas que deseas mostrar */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  height: 3rem; /* Ajusta esta altura según el tamaño de la fuente */
+}
+
 #aside-ad {
   width: 500px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1em;
 }
 
 #aside-ad img {
@@ -360,5 +388,12 @@ textarea {
 
   #carouselAds-img {
     height: 100vh !important;
+  }
+
+  #contacto {
+    margin-left: 0.5em;
+  }
+  form {
+    padding: 0 0.5em;
   }
 }

@@ -251,18 +251,33 @@ const Tabs = () => {
               role="tabpanel"
               key={category.id}
             >
-              <div className="row">
-                {category.images.map((src, index) => (
-                  <div id="pestaña" className="col-12 col-sm-6 col-md-4 mb-3" key={index}>
-                    <LazyLoadImage
-                      src={src}
-                      className="img-fluid"
-                      alt={`${category.title} Ad ${index + 1}`}
-                      effect="blur" // Efecto de desenfoque mientras se carga
-                    />
+            <div className="row d-flex justify-content-center">
+              {category.images.map((src, index) => (
+                <div id="pestaña" className="col-12 mb-3" key={index}>
+                  <div className="card w-100">
+                    {/* Parte Superior: Logo */}
+                    <div className="d-flex justify-content-center">
+                      <LazyLoadImage
+                        src={src}
+                        alt={`${category.title} Logo`}
+                        effect="blur"
+                        className="card-img-top img-fluid"
+                        style={{ maxHeight: '150px', width: 'auto' }}
+                      />
+                    </div>
+                    {/* Parte Inferior: Información */}
+                    <div className="card-body">
+                      <h5 className="card-title">Nombre: Tus Zapatos Listos</h5>
+                      <p className="card-text">Dirección: Av. Rodriguez Peña 1160 Saenz Peña 3 de Febrero PBA</p>
+                      <p className="card-text">WhatsApp: +123456789</p>
+                      <p className="card-text">Instagram: @ejemplo</p>
+                      <p className="card-text">Correo: ejemplo@correo.com</p>
+                      <button className="btn btn-primary">Evaluar</button>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
+            </div>
             </div>
           ))}
         </div>

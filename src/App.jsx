@@ -10,7 +10,7 @@ import Aside from './components/Aside';
 
 function App() {
   return (
-    <div>
+    <div> 
       <Navbar />
       <div className="container mt-3">
         <div className="row">
