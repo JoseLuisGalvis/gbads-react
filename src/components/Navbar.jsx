@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
 
         {/* Contenedor flexbox para el loader y el botón de modo oscuro */}
-        <div className="d-flex align-items-center justify-content-between w-100">
+        <div className="d-flex align-items-center justify-content-end w-100">
           <div className="loader d-flex align-items-center">
             <h2 className="mt-1 px-1 text-white" id="advertising">Publicidad para:</h2>
           </div>
