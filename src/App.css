@@ -16,7 +16,7 @@ body {
 }
 
 .dark {
-  --background-color: #1a1a1a;
+  --background-color: #212529;
   --text-color: #ffffff;
 }
 
@@ -46,7 +46,6 @@ button:focus {
   box-shadow: 0 0 0 2px rgba(232, 148, 3, 0.8);
 }
 
-/* Estilos para el botón de cambio de tema */
 /* Estilos para el botón de cambio de tema */
 .theme-toggle-button {
   width: 40px;
@@ -90,8 +89,13 @@ button:focus {
   color: white;
 }
 
+.dark #aside-title {
+  color: white !important;
+}
+
 /* Estilos para el box-shadow en modo oscuro */
 .dark #pestaña {
+  background-color: #292727;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
@@ -103,6 +107,22 @@ button:focus {
 /* Modo oscuro */
 .dark #contactForm {
   color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark input,
+.dark textarea {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Texto blanco en modo oscuro */
+}
+
+.dark .btn {
+  background-color: #484b4f;
+  border: none;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Texto blanco en modo oscuro */
+}
+
+.dark .btn:hover {
+  background-color: #393d42;
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.3);
 }
 
 .dark label,
@@ -128,6 +148,14 @@ button:focus {
 /* Para el placeholder en modo oscuro */
 .dark .form-control::placeholder {
   color: #9ca3af !important;
+}
+
+.dark #carouselAds-img {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.dark #ad-img {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3) !important;
 }
 
 /***/
@@ -195,6 +223,15 @@ button:focus {
   object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
 }
 
+#carouselAds-img {
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+  box-shadow: 10px 5px 10px rgba(2, 40, 79, 0.4);
+  border-radius: 0.5em;
+  width: 99% !important;
+  height: 86vh !important;
+}
+
 #pestaña {
   width: 320px;
   display: flex;
@@ -217,6 +254,11 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#aside-ad img {
+  border-radius: 0.5em;
+  box-shadow: 10px 5px 10px rgba(2, 40, 79, 0.4) !important;
 }
 
 input,
@@ -276,9 +318,20 @@ textarea {
 
 @media (max-width: 576px) {
   /* Estilos para dispositivos móviles */
+  /* Ajusta el tamaño de la imagen del logo */
   .navbar img {
-    width: 3em;
-    height: 2em;
+    width: 3.5em;
+    height: 2.5em;
+  }
+
+  /* Alineación y tamaño del texto del loader */
+  #advertising {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .loader {
+    width: auto; /* Permite al loader ocupar espacio según su contenido */
   }
 
   .navbar-brand {
@@ -290,11 +343,10 @@ textarea {
   }
 
   .loader:after {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .loader h2 {
-    font-size: 0.9em;
     margin-top: 0.5em !important;
   }
 
@@ -302,15 +354,11 @@ textarea {
     width: 100% !important;
   }
 
-  .loader:after {
-    font-size: 18px;
-  }
-
   .carousel-item {
     height: 100vh !important; /* Ajusta la altura del contenedor del carrusel a 100% del viewport */
   }
 
-  .carousel-item img {
-    height: 100% !important;
+  #carouselAds-img {
+    height: 100vh !important;
   }
 }

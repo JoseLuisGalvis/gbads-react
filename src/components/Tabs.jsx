@@ -222,10 +222,10 @@ const Tabs = () => {
   
     return (
       <div>
-        <h4 className="text-dark mt-3" id="ads">Anuncios por Categoría</h4>
+        <h4 className="text-dark mt-4" id="ads">Anuncios por Categoría</h4>
         <a
           href="#navbar"
-          className="btn btn-primary mt-3 btn-proyectos text-center"
+          className="btn btn-primary my-2 btn-proyectos text-center"
         >
           Ir al Inicio
         </a>

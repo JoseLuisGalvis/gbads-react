@@ -60,11 +60,11 @@ const Footer = () => {
             <div>
               <i className="text-white fa fa-home fs-5"></i>
               <p className="text-white d-inline-block ms-2">Ubicación:</p>
-              <p className="text-white d-inline-block ms-1">PBA - Argentina</p>
+              <p className="text-white d-inline-block ms-1">GBA - Argentina</p>
               <br />
               <i className="text-white fa fa-envelope fs-5"></i>
               <p className="text-white d-inline-block ms-2">Correo Electrónico:</p>
-              <p className="text-white d-inline-block ms-1">serviceAds@gmail.com</p>
+              <p className="text-white d-inline-block ms-1">GBAds@gmail.com</p>
             </div>
           </div>
         </div>

@@ -14,7 +14,8 @@ const CarouselAds = () => {
             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <img
                 src={ad}
-                className="w-100 image-fluid"
+                className="img-fluid"
+                id="carouselAds-img"
                 alt={`Publicidad ${index + 1}`}
                 loading="lazy"
               />
