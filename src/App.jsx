@@ -7,6 +7,7 @@ import Tabs from './components/Tabs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Aside from './components/Aside';
+import './App.css';
 
 function App() {
   return (
